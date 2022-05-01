@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Function scope example</title>
+</head>
+<body>
+<script>
+    function capitalize(text) {
+        return text > "" ? text.charAt(0).toUpperCase() + text.toLowerCase().substring(1) : undefined;
+    }
+
+    console.log(capitalize("árvíz szöveg"));
+    console.log(capitalize("lowercase"));
+    console.log(capitalize("UPPERCASE"));
+    console.log(capitalize("BoTh"));
+    console.log(capitalize("a"));
+    console.log(capitalize(""));
+
+    function lastLetter(text) {
+        return typeof(text) === "string" ? text.charAt(text.length - 1) : undefined;
+    }
+
+    console.log(lastLetter("árvíz szöveg"));
+    console.log(lastLetter("lowercase"));
+    console.log(lastLetter("UPPERCASE"));
+    console.log(lastLetter("BoTh"));
+    console.log(lastLetter("a"));
+    console.log(lastLetter(""));
+    console.log(lastLetter(1));
+
+</script>
+
+</body>
+</html>
