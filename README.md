@@ -1,1 +1,1 @@
-# odin-js-exercixes
+# odin-js-exercises
